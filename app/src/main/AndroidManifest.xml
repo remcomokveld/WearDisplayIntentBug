@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="nl.remcomokveld.weardisplayintentbug">
+    package="com.sample.weardisplayintentbug">
 
     <uses-feature android:name="android.hardware.type.watch" />
 
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.DeviceDefault">
         <activity
-            android:name=".MyStubBroadcastActivity"
+            android:name="com.sample.weardisplayintentbug.MyStubBroadcastActivity"
             android:label="MyStubBroadcastActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,17 +20,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MyDisplayActivity"
+            android:name="com.sample.weardisplayintentbug.MyDisplayActivity"
             android:allowEmbedded="true"
             android:exported="true"
             android:taskAffinity=""
             android:theme="@android:style/Theme.DeviceDefault.Light" />
 
         <receiver
-            android:name=".MyPostNotificationReceiver"
+            android:name="com.sample.weardisplayintentbug.MyPostNotificationReceiver"
             android:exported="true">
             <intent-filter>
-                <action android:name="nl.remcomokveld.weardisplayintentbug.SHOW_NOTIFICATION" />
+                <action android:name="com.sample.weardisplayintentbug.SHOW_NOTIFICATION" />
             </intent-filter>
         </receiver>
     </application>

@@ -1,4 +1,4 @@
-package nl.remcomokveld.weardisplayintentbug;
+package com.sample.weardisplayintentbug;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,7 +14,7 @@ public class MyStubBroadcastActivity extends Activity {
 
         for (int i = 0; i < 10; i++) {
             Intent intent = new Intent();
-            intent.setAction("nl.remcomokveld.weardisplayintentbug.SHOW_NOTIFICATION");
+            intent.setAction("com.sample.weardisplayintentbug.SHOW_NOTIFICATION");
             intent.putExtra(MyPostNotificationReceiver.CONTENT_KEY, getString(R.string.title));
             sendBroadcast(intent);
         }

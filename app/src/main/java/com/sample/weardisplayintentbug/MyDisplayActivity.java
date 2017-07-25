@@ -1,4 +1,4 @@
-package nl.remcomokveld.weardisplayintentbug;
+package com.sample.weardisplayintentbug;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -12,6 +12,6 @@ public class MyDisplayActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display);
-        mTextView = (TextView) findViewById(R.id.text);
+        mTextView = findViewById(R.id.text);
     }
 }
